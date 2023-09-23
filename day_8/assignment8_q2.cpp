@@ -19,12 +19,12 @@ public:
 class Company
 {
     CEmployee m_emp;
-    static int m_ncount;
+    static int m_nCount;
 public:
     Company(int , char[]) ;
     ~Company();
     void displayEmployees();
-    void sortEmployees();
+    // void sortEmployees();
 };
 
 
@@ -51,14 +51,14 @@ void Company::displayEmployees(){
 Company::~Company(){
     cout << "company destructor.\n";
 }
-void Company::sortEmployee(){
+// void Company::sortEmployees(){
 
-    for(int i = 0; i < m_nCount; i++){
-        for(int j =0 ; j < i; j++){
-            if(m_emp.getname()[i] > m_emp.getname())
-        }
-    }
-}
+//     for(int i = 0; i < m_nCount; i++){
+//         for(int j =0 ; j < i; j++){
+//             if(m_emp.getname()[i] > m_emp.getname())
+//         }
+//     }
+// }
 
 
 int Company::m_nCount;
@@ -77,7 +77,7 @@ int main()
 
 
     //Read details of employees in Company
-    for(int i =0; i < nCount; i++){
+    for(int i =0; i < m_nCount; i++){
         cout << "\nEnter employee id : ";
         cin >> id;
         cout << "\nEnter employee name : ";
