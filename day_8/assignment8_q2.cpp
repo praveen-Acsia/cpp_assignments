@@ -71,7 +71,7 @@ Company::Company(int n){
 
 
 void Company::sort(){
-    CEmployee* temp = new CEmployee(0, "xxx");
+    CEmployee* temp = new CEmployee(0, " ");
     for (size_t i = 0; i < nCount; i++)
     {
         for (size_t j = i + 1; j < nCount; j++)
